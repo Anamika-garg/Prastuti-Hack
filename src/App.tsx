@@ -1,16 +1,33 @@
-import { Routes, Route, Link } from "react-router-dom";
-import { Expiration } from "./screens/Expiration";
-import { Profile } from "./screens/Profile";
-import { Recipes } from "./screens/Recipes";
-import { Settings } from "./screens/Settings";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Toaster } from 'react-hot-toast';
+import Layout from './components/Layout';
+import Dashboard from './pages/Dashboard';
+import Inventory from './pages/Inventory';
+import WasteTracking from './pages/WasteTracking';
+import Profile from './pages/Profile';
+import AddItem from './pages/AddItem';
+import Recipes from './pages/Recipes';
+import Community from './pages/Community';
 
-export const App = () => {
+function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Expiration />} />
-      <Route path="/profile" element={<Profile />} />
-      <Route path="/recipes" element={<Recipes />} />
-      <Route path="/settings" element={<Settings />} />
-    </Routes>
+    <>
+      <Router>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/inventory" element={<Inventory />} />
+            <Route path="/add-item" element={<AddItem />} />
+            <Route path="/waste-tracking" element={<WasteTracking />} />
+            <Route path="/recipes" element={<Recipes />} />
+            <Route path="/community" element={<Community />} />
+            <Route path="/profile" element={<Profile />} />
+          </Route>
+        </Routes>
+      </Router>
+      <Toaster position="top-right" />
+    </>
   );
-};
+}
+
+export default App;
