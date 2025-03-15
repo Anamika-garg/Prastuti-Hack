@@ -7,23 +7,23 @@ import { ScrollArea, ScrollBar } from "../../components/ui/scroll-area";
 
 // Food item data for expiration alerts
 const expirationItems = [
-  { id: 1, name: "Milk", days: 4, image: "public/image-2.png" },
-  { id: 2, name: "Bread", days: 2, image: "public/image-3.png" },
-  { id: 3, name: "Vegetables", days: 5, image: "public/image-5.png" },
-  { id: 4, name: "Eggs", days: 7, image: "public/image-4.png" },
-  { id: 5, name: "Ketchup", days: 4, image: "public/image-6.png" },
-  { id: 6, name: "Butter", days: 3, image: "public/image-7.png" },
-  { id: 7, name: "Curd", days: 1, image: "public/image.png" },
-  { id: 8, name: "Soyabeen Chunks", days: 30, image: "public/image-1.png" },
+  { id: 1, name: "Milk", days: 4, image: "./public/image-2.png" },
+  { id: 2, name: "Bread", days: 2, image: "./public/image-3.png" },
+  { id: 3, name: "Vegetables", days: 5, image: "./public/image-5.png" },
+  { id: 4, name: "Eggs", days: 7, image: "./public/image-4.png" },
+  { id: 5, name: "Ketchup", days: 4, image: "./public/image-6.png" },
+  { id: 6, name: "Butter", days: 3, image: "./public/image-7.png" },
+  { id: 7, name: "Curd", days: 1, image: "./public/image.png" },
+  { id: 8, name: "Soyabeen Chunks", days: 30, image: "./public/image-1.png" },
 ];
 
 // Food items for "Use It Today" section
 const useItTodayItems = [
-  { id: 1, image: "public/image-8.png" },
-  { id: 2, image: "public/image-9.png" },
-  { id: 3, image: "public/image-10.png" },
-  { id: 4, image: "public/image-11.png" },
-  { id: 5, image: "public/image-12.png" },
+  { id: 1, image: "./public/image-8.png" },
+  { id: 2, image: "./public/image-9.png" },
+  { id: 3, image: "./public/image-10.png" },
+  { id: 4, image: "./public/image-11.png" },
+  { id: 5, image: "./public/image-12.png" },
 ];
 
 export const Expiration = (): JSX.Element => {
