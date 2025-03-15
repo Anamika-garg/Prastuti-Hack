@@ -10,7 +10,7 @@ import {
   BookOpenIcon,
   UserGroupIcon,
   Bars3Icon,
-  XMarkIcon,
+  // XMarkIcon,
 } from '@heroicons/react/24/outline';
 
 const navigation = [

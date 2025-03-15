@@ -40,7 +40,7 @@ const mockInventory: InventoryItem[] = [
 
 export default function Inventory() {
   const [inventory] = useState<InventoryItem[]>(mockInventory);
-  const [isAddingItem, setIsAddingItem] = useState(false);
+  // const [isAddingItem, setIsAddingItem] = useState(false);
 
   return (
     <div className="space-y-6">
@@ -54,7 +54,7 @@ export default function Inventory() {
         <div className="mt-4 sm:ml-16 sm:mt-0 sm:flex-none">
           <button
             type="button"
-            onClick={() => setIsAddingItem(true)}
+            onClick={()=>{}}
             className="block rounded-md bg-primary-600 px-3 py-2 text-center text-sm font-semibold text-white hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
           >
             <PlusIcon className="inline-block h-5 w-5 mr-1" />
